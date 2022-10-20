@@ -1,0 +1,100 @@
+import { StyleSheet, Dimensions, Platform } from 'react-native';
+import scale, { verticalScale } from '../../utils/Scale';
+import COLOR_CONST from '../../theme/ColorConstants';
+
+export default StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#ffffff90',
+    },
+
+    imageBackground: {
+        flex: 1,
+        alignSelf: 'center',
+        height: scale(100),
+        width: scale(375),
+        marginBottom: verticalScale(500)
+    },
+
+    headerContainer: {
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        flexDirection: 'row',
+        paddingHorizontal: scale(10),
+        height: scale(80),
+        width: scale(375),
+        backgroundColor: COLOR_CONST.btnBgColor
+    },
+
+    backIcon: {
+        height: scale(15),
+        width: scale(10),
+        margin: scale(10)
+    },
+
+    mainText: {
+        fontSize: scale(20),
+        fontWeight: '700',
+        // opacity: 0.8,
+        color: '#fff',
+        marginLeft: scale(10)
+    },
+
+    bellIcon: {
+        height: scale(25),
+        width: scale(25)
+    },
+
+    offeCell: {
+        height: scale(120),
+        width: scale(350),
+        backgroundColor: '#ffc8bf',
+        borderRadius: scale(15),
+        // marginTop: verticalScale(30),
+        marginBottom: verticalScale(40),
+        alignSelf: 'center',
+        // justifyContent: 'space-between',
+        alignItems: 'center',
+        flexDirection: 'row'
+    },
+
+    offeImage: {
+        marginTop: verticalScale(10),
+        height: scale(165),
+        width: scale(130),
+    },
+
+    offeMega: {
+        fontSize: scale(12),
+        fontWeight: '700',
+        color: 'red'
+    },
+
+    offeShopName: {
+        fontSize: scale(30),
+        fontWeight: '700',
+        color: '#191249'
+    },
+
+    offePrice: {
+        fontSize: scale(18),
+        fontWeight: '700',
+        marginTop: verticalScale(10),
+        color: 'red'
+    },
+
+    offeCurrPrice: {
+        fontSize: scale(18),
+        fontWeight: '500',
+        marginTop: verticalScale(10),
+        color: "#ffffff",
+        textDecorationLine: "line-through"
+    },
+
+    offeAvailable: {
+        fontSize: scale(10),
+        fontWeight: '800',
+        marginTop: verticalScale(15),
+        color: "#ffffff",
+    },
+})
